@@ -24,44 +24,40 @@
                             </div>
                             <div class="col-3 d-flex flex-column align-items-center">
                                 <h3 class="nr-text-primary">Km da percorrere</h3>
-                                <input type="text" name="km" id="km">
+                                <input type="number" name="km" id="km">
                             </div>
                             <div class="col-3 d-flex flex-column align-items-center">
                                 <h3 class="nr-text-primary">Fascia d'et&agrave;</h3>
-                                <select name="eta" id="eta" form="etaform">
-                                    <option value="underAge">Minorenne</option>
-                                    <option value="saab">Tra 18 e 64 anni</option>
-                                    <option value="overAge">Over 65</option>
-                                </select>
+                                <input type="number" name="age" id="age">
                             </div>
                         </div>
                         <div class="form-bottom d-flex justify-content-center pt-5">
-                            <button type="submit" class="btn nr-bg-primary me-4 text-white">Genera</button>
-                            <button type="reset" class="btn nr-bg-primary text-white">Annulla</button>
+                            <button id="buttonSend" type="submit" class="btn nr-bg-primary me-4 text-white">Genera</button>
+                            <button id="buttonCanc" type="reset" class="btn nr-bg-primary text-white">Annulla</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div id="ticket" class="row">
                 <div class="col-12">
                     <h2 class="text-white fw-bold text-uppercase text-center m-4 fs-1"> il tuo biglietto</h2>
                     <div class="card d-flex justify-content-center p-5">
                         <h3 class="text-uppercase fw-bold ms-5">Dettaglio passeggeri</h3>
                         <div class="row justify-content-center">
-                            <div class="col-3 card bg-primary text-white d-flex flex-column align-items-center justify-content-center">
+                            <div id="nameTicket" class="col-3 card bg-primary text-white d-flex flex-column align-items-center justify-content-center">
                                 <p class="text-uppercase">Nome passeggero</p>
                             </div>
-                            <div class="col-2 card">
+                            <div id="discount" class="col-2 card">
                                 <p class="fw-bold d-flex flex-column align-items-center justify-content-between">Offerta</p>
                             </div>
-                            <div class="col-2 card">
+                            <div id="carriage" class="col-2 card">
                                 <p class="fw-bold d-flex flex-column align-items-center justify-content-center">Carrozza</p>
                             </div>
-                            <div class="col-2 card">
+                            <div id="cpCode" class="col-2 card">
                                 <p class="fw-bold d-flex flex-column align-items-center justify-content-center">Codice CP</p>
                             </div>
-                            <div class="col-2 card">
+                            <div id="ticketPrice" class="col-2 card">
                                 <p class="fw-bold d-flex flex-column align-items-center justify-content-center">Costo biglietto</p>
                             </div>
                         </div>  
