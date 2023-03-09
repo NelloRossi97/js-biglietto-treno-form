@@ -2,3 +2,23 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #b91450;
 }
+
+.nr-text-primary{
+    color: #b91450;
+}
+.nr-bg-primary{
+    background-color: #b91450;
+}
+input,select{
+    border-color: #b91450;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    color: black;
+    background-color: #6b1836;
+}
+
+.box-shadow{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
