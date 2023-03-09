@@ -30,7 +30,7 @@ buttonSend.addEventListener('click', function(){
     const scontoMin = ticketPrice * 0.20;
     const scontoOver = ticketPrice* 0.40;
     if (age < 18) {
-        totalPrice = ticketPrice - scontoMin,
+        totalPrice = ticketPrice - scontoMin;
         document.getElementById('ticketPrice').innerHTML += 
         `
         <p class="fw-bold text-center">${totalPrice}&euro;<p>
@@ -40,7 +40,7 @@ buttonSend.addEventListener('click', function(){
         <p class="fw-bold text-center">Hai diritto ad uno sconto del <span class="text-danger fw-bold">20%</span></p>
         `;
     } else if (age > 64) {
-        totalPrice = ticketPrice - scontoOver,
+        totalPrice = ticketPrice - scontoOver;
         document.getElementById('ticketPrice').innerHTML += 
         `
         <p class="fw-bold text-center">${totalPrice}&euro;<p>
@@ -51,11 +51,11 @@ buttonSend.addEventListener('click', function(){
         `;
     }
     else {
-        totalPrice = ticketPrice,
+        totalPrice = ticketPrice;
         document.getElementById('ticketPrice').innerHTML += 
         `
         <p class="fw-bold text-center">${totalPrice}&euro;</p>
-        `,
+        `;
         document.getElementById('discount').innerHTML +=
         `
         <p class="fw-bold text-center">Lo sconto non è disponibile per la tua fascia d'eta.</p>
