@@ -67,7 +67,13 @@ buttonSend.addEventListener('click', function(){
     document.getElementById('cpCode').innerHTML += getRndInteger(90000,99999);
 })
 
-
+buttonCanc.addEventListener('click', function(){
+    document.getElementById('ticketPrice').innerHTML = `<p class="fw-bold d-flex flex-column align-items-center justify-content-center">Costo biglietto</p>`;
+    document.getElementById('discount').innerHTML = `<p class="fw-bold d-flex flex-column align-items-center justify-content-between">Offerta</p>`;
+    document.getElementById('nameTicket').innerHTML = `<p class="text-uppercase">Nome passeggero</p>`;
+    document.getElementById('carriage').innerHTML = `<p class="fw-bold d-flex flex-column align-items-center justify-content-center">Carrozza</p>`;
+    document.getElementById('cpCode').innerHTML = `<p class="fw-bold d-flex flex-column align-items-center justify-content-center">Codice CP</p>`;
+})
 
 
 
