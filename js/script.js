@@ -76,6 +76,9 @@ buttonCanc.addEventListener('click', function(){
     document.getElementById('carriage').innerHTML = `<p class="fw-bold d-flex flex-column align-items-center justify-content-center">Carrozza</p>`;
     document.getElementById('cpCode').innerHTML = `<p class="fw-bold d-flex flex-column align-items-center justify-content-center">Codice CP</p>`;
     document.getElementById('ticket').classList.add('d-none');
+    nameSurnameBox.value = "";
+    kmBox.value = "";
+    ageBox.value = "";
 })
 
 
