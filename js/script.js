@@ -65,6 +65,8 @@ buttonSend.addEventListener('click', function(){
     document.getElementById('nameTicket').innerHTML += `<p> ${nameSurname} </p>`;
     document.getElementById('carriage').innerHTML += Math.floor(Math.random() * 10) + 1;
     document.getElementById('cpCode').innerHTML += getRndInteger(90000,99999);
+    document.getElementById('ticket').classList.remove('d-none');
+    document.getElementById('ticket').classList.add('d-block');
 })
 
 buttonCanc.addEventListener('click', function(){
@@ -73,6 +75,7 @@ buttonCanc.addEventListener('click', function(){
     document.getElementById('nameTicket').innerHTML = `<p class="text-uppercase">Nome passeggero</p>`;
     document.getElementById('carriage').innerHTML = `<p class="fw-bold d-flex flex-column align-items-center justify-content-center">Carrozza</p>`;
     document.getElementById('cpCode').innerHTML = `<p class="fw-bold d-flex flex-column align-items-center justify-content-center">Codice CP</p>`;
+    document.getElementById('ticket').classList.add('d-none');
 })
 
 
