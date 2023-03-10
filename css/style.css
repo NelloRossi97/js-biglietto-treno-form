@@ -22,3 +22,10 @@ input,select{
 .box-shadow{
     box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 1200px){
+    .form-top{
+        flex-direction: column;
+        align-items: center;
+    }
+}

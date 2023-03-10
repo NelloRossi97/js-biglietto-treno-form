@@ -18,6 +18,8 @@ let totalPrice;
 //catturo in una variabile i bottoni
 const buttonSend = document.getElementById('buttonSend');
 const buttonCanc = document.getElementById('buttonCanc');
+
+//funzione per avere un numero randomico
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (min - max)) + min;
 }
